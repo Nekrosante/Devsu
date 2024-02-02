@@ -1,4 +1,4 @@
-Reto Sauce Demo E2E
+suReto Sauce Demo E2E
 
 Realizado por:
 Luis Miguel Arcia Moreno
@@ -23,7 +23,7 @@ Pasos:
 Resultado esperado: Se debe mostrar la página CHECKOUT: COMPLETE! que aprueba la compra visualizando el mensaje THANK YOU FOR YOUR ORDER.
 
 PASOS PARA LA EJECUCIÓN:
-	1.Descomprimir el archivo E2E2.zip en la ruta deseada.
+	1.Descomprimir el archivo Devsu.zip en la ruta deseada.
 	2.Desde el software IntelliJ IDEA ir a File>>Open.
 	3.En la ventana emergente, introducir la ruta donde se descomprimió el archivo .zip previamente.
 	4.Seleccionar la carpeta RetoSauceDemoE2E.
