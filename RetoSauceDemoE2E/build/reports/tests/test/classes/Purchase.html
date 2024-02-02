@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Purchase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Purchase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Purchase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">29.060s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Validate the purchasing flow on the Swag Labs website.</td>
+<td class="success">16.832s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Validates the purchase flow with only one item.</td>
+<td class="success">12.228s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+@purchase @CP001
+Scenario: Validate the purchasing flow on the Swag Labs website.      ?[90m# src/test/resources/features/purchase.feature:12?[0m
+  ?[32mGiven ?[0m?[32maccess to a standard user on the Swag Labs login page?[0m         ?[90m# sauce.stepdefinitions.PurchaseStep.accessToAStandardUser()?[0m
+  ?[32mAnd ?[0m?[32menters valid credentials as a standard user?[0m                     ?[90m# sauce.stepdefinitions.PurchaseStep.entersValidCredentialsAsAStandardUser()?[0m
+  ?[32mWhen ?[0m?[32madds the products to the shopping cart?[0m                         ?[90m# sauce.stepdefinitions.PurchaseStep.addsTheProductsToTheShoppingCart()?[0m
+  ?[32mAnd ?[0m?[32mcompletes the purchase by entering their information?[0m            ?[90m# sauce.stepdefinitions.PurchaseStep.completesThePurchaseByEnteringTheirInformation()?[0m
+  ?[32mThen ?[0m?[32mvalidates the verification message ?[0m?[32m?[1m&quot;Thank you for your order!&quot;?[0m ?[90m# sauce.stepdefinitions.PurchaseStep.validatesTheVerificationMessage(java.lang.String)?[0m
+
+@purchase @CP002
+Scenario: Validates the purchase flow with only one item.               ?[90m# src/test/resources/features/purchase.feature:17?[0m
+  ?[32mGiven ?[0m?[32maccess to a standard user on the Swag Labs login page?[0m           ?[90m# sauce.stepdefinitions.PurchaseStep.accessToAStandardUser()?[0m
+  ?[32mAnd ?[0m?[32menters valid credentials as a standard user?[0m                       ?[90m# sauce.stepdefinitions.PurchaseStep.entersValidCredentialsAsAStandardUser()?[0m
+  ?[32mWhen ?[0m?[32madds the products to the shopping cart?[0m                           ?[90m# sauce.stepdefinitions.PurchaseStep.addsTheProductsToTheShoppingCart()?[0m
+  ?[32mAnd ?[0m?[32mcompletes the purchase by removing an item from the shopping cart?[0m ?[90m# sauce.stepdefinitions.PurchaseStep.completesThePurchaseByRemovingAnItemFromTheShoppingCart()?[0m
+  ?[32mThen ?[0m?[32mvalidates the verification message ?[0m?[32m?[1m&quot;Thank you for your order!&quot;?[0m   ?[90m# sauce.stepdefinitions.PurchaseStep.validatesTheVerificationMessage(java.lang.String)?[0m
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/Nekrosante/IdeaProjects/RetoSauceDemoE2E/src/test/resources/features/purchase.feature
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Validate the purchasing flow on the Swag Labs website.(purchase;validate-the-purchasing-flow-on-the-swag-labs-website.)
+--------------------------------------------------------------------------------
+1706831316665	geckodriver	INFO	Listening on 127.0.0.1:16411
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+WebDriver BiDi listening on ws://127.0.0.1:40029
+Read port: 54445
+DevTools listening on ws://127.0.0.1:40029/devtools/browser/9a510f91-c862-48fa-9f95-5d9854485bd2
+console.warn: LoginRecipes: &quot;Falling back to a synchronous message for: https://www.saucedemo.com.&quot;
+console.warn: LoginRecipes: &quot;Falling back to a synchronous message for: https://www.saucedemo.com.&quot;
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Validate the purchasing flow on the Swag Labs website.
+----------------------------------------------------------------------
+Dynamically enable window occlusion 1
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/Nekrosante/IdeaProjects/RetoSauceDemoE2E/src/test/resources/features/purchase.feature
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Validates the purchase flow with only one item.(purchase;validates-the-purchase-flow-with-only-one-item.)
+--------------------------------------------------------------------------------
+1706831331534	geckodriver	INFO	Listening on 127.0.0.1:28091
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+WebDriver BiDi listening on ws://127.0.0.1:17232
+Read port: 54521
+DevTools listening on ws://127.0.0.1:17232/devtools/browser/f79aeeee-b1e1-4151-afef-07213b656791
+console.warn: LoginRecipes: &quot;Falling back to a synchronous message for: https://www.saucedemo.com.&quot;
+console.warn: LoginRecipes: &quot;Falling back to a synchronous message for: https://www.saucedemo.com.&quot;
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Validates the purchase flow with only one item.
+----------------------------------------------------------------------
+Dynamically enable window occlusion 1
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.5.1</a> at 1/02/2024, 6:49:10 p. m.</p>
+</div>
+</div>
+</body>
+</html>

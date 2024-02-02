@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Purchase" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-02-01T23:48:34" hostname="NEKROSANTE" time="29.06">
+  <properties/>
+  <testcase name="Validate the purchasing flow on the Swag Labs website." classname="Purchase" time="16.832"/>
+  <testcase name="Validates the purchase flow with only one item." classname="Purchase" time="12.228"/>
+  <system-out><![CDATA[
+@purchase @CP001
+Scenario: Validate the purchasing flow on the Swag Labs website.      ?[90m# src/test/resources/features/purchase.feature:12?[0m
+  ?[32mGiven ?[0m?[32maccess to a standard user on the Swag Labs login page?[0m         ?[90m# sauce.stepdefinitions.PurchaseStep.accessToAStandardUser()?[0m
+  ?[32mAnd ?[0m?[32menters valid credentials as a standard user?[0m                     ?[90m# sauce.stepdefinitions.PurchaseStep.entersValidCredentialsAsAStandardUser()?[0m
+  ?[32mWhen ?[0m?[32madds the products to the shopping cart?[0m                         ?[90m# sauce.stepdefinitions.PurchaseStep.addsTheProductsToTheShoppingCart()?[0m
+  ?[32mAnd ?[0m?[32mcompletes the purchase by entering their information?[0m            ?[90m# sauce.stepdefinitions.PurchaseStep.completesThePurchaseByEnteringTheirInformation()?[0m
+  ?[32mThen ?[0m?[32mvalidates the verification message ?[0m?[32m?[1m"Thank you for your order!"?[0m ?[90m# sauce.stepdefinitions.PurchaseStep.validatesTheVerificationMessage(java.lang.String)?[0m
+
+@purchase @CP002
+Scenario: Validates the purchase flow with only one item.               ?[90m# src/test/resources/features/purchase.feature:17?[0m
+  ?[32mGiven ?[0m?[32maccess to a standard user on the Swag Labs login page?[0m           ?[90m# sauce.stepdefinitions.PurchaseStep.accessToAStandardUser()?[0m
+  ?[32mAnd ?[0m?[32menters valid credentials as a standard user?[0m                       ?[90m# sauce.stepdefinitions.PurchaseStep.entersValidCredentialsAsAStandardUser()?[0m
+  ?[32mWhen ?[0m?[32madds the products to the shopping cart?[0m                           ?[90m# sauce.stepdefinitions.PurchaseStep.addsTheProductsToTheShoppingCart()?[0m
+  ?[32mAnd ?[0m?[32mcompletes the purchase by removing an item from the shopping cart?[0m ?[90m# sauce.stepdefinitions.PurchaseStep.completesThePurchaseByRemovingAnItemFromTheShoppingCart()?[0m
+  ?[32mThen ?[0m?[32mvalidates the verification message ?[0m?[32m?[1m"Thank you for your order!"?[0m   ?[90m# sauce.stepdefinitions.PurchaseStep.validatesTheVerificationMessage(java.lang.String)?[0m
+]]></system-out>
+  <system-err><![CDATA[[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/Nekrosante/IdeaProjects/RetoSauceDemoE2E/src/test/resources/features/purchase.feature
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Validate the purchasing flow on the Swag Labs website.(purchase;validate-the-purchasing-flow-on-the-swag-labs-website.)
+--------------------------------------------------------------------------------
+1706831316665	geckodriver	INFO	Listening on 127.0.0.1:16411
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+WebDriver BiDi listening on ws://127.0.0.1:40029
+Read port: 54445
+DevTools listening on ws://127.0.0.1:40029/devtools/browser/9a510f91-c862-48fa-9f95-5d9854485bd2
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Validate the purchasing flow on the Swag Labs website.
+----------------------------------------------------------------------
+Dynamically enable window occlusion 1
+[Test worker] INFO io.cucumber.core.plugin.SerenityReporter - Running feature from file:///C:/Users/Nekrosante/IdeaProjects/RetoSauceDemoE2E/src/test/resources/features/purchase.feature
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Validates the purchase flow with only one item.(purchase;validates-the-purchase-flow-with-only-one-item.)
+--------------------------------------------------------------------------------
+1706831331534	geckodriver	INFO	Listening on 127.0.0.1:28091
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+WebDriver BiDi listening on ws://127.0.0.1:17232
+Read port: 54521
+DevTools listening on ws://127.0.0.1:17232/devtools/browser/f79aeeee-b1e1-4151-afef-07213b656791
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.saucedemo.com."
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Validates the purchase flow with only one item.
+----------------------------------------------------------------------
+Dynamically enable window occlusion 1
+]]></system-err>
+</testsuite>

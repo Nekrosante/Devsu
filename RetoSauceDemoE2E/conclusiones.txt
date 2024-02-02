@@ -1,0 +1,43 @@
+Conclusiones
+
+Realizado por:
+Luis Miguel Arcia Moreno
+
+CUCUMBER&GHERKIN
+@purchase
+Feature: Purchase
+  As a standard user,
+  I want to make a purchase,
+  To verify the website's purchasing flow.
+
+  Background: The standard user successfully logs into the Swag Labs page.
+    Given access to a standard user on the Swag Labs login page
+    And enters valid credentials as a standard user
+
+  @CP001
+  Scenario: Validate the purchasing flow on the Swag Labs website.
+    When adds the products to the shopping cart
+    And completes the purchase by entering their information
+    Then validates the verification message "Thank you for your order!"
+  @CP002
+  Scenario: Validates the purchase flow with only one item.
+    When adds the products to the shopping cart
+    And completes the purchase by removing an item from the shopping cart
+    Then validates the verification message "Thank you for your order!"
+
+Hallazagos
+
+Error 01
+Rol: standard_user
+Título: La opción “Reset App State” no restablece correctamente los botones “ADD TO CART” a “REMOVE”
+Descripción: Al tener en el carrito de compras elementos seleccionados, al usar la opción “Reset App State” dentro del botón menú, la página principal no se actualiza y los elementos agregado en el carro permanece en REMOVE.
+
+Error 02
+Rol: standard_user
+Título:
+Se permite realizar un compra sin tener seleccionado ningún elemento en el carrito de compras
+Descripción:
+Se puede realizar el proceso de compras sin tener en el carrito algún producto.
+
+Conclusiones:
+Al explorar manualmente la aplicación fue posible validar el correcto funcionamiento del flujo a probar en proceso de automatización, por lo cual es posible considerar que el caso de prueba que ejecuta la máquina cumple con los criterios de aceptación, sin embargo se hace necesario la ejecución de casos de pruebas que exploren el funcionamiento de las herramientas secundarias vinculadas a el flujo principal de compra.
