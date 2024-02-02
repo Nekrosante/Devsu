@@ -29,5 +29,5 @@ PASOS PARA LA EJECUCIÓN:
 	4.Seleccionar la carpeta RetoSauceDemoE2E.
 	5.En la ventana emergente seleccionar la opción “Trust the Project”.
 	6.En la parte superior derecha dar clic en el icono de “Build Project” u oprimir Ctrl + F9.
-	7.Buscar el archivo swagLabs.feature en la ruta “RetoSauceDemoE2E/src/test/resources/features/purchase.feature” del proyecto cargado en la parte derecha de la ventana de Intellij
+	7.Buscar el archivo purchase.feature en la ruta “RetoSauceDemoE2E/src/test/resources/features/purchase.feature” del proyecto cargado en la parte derecha de la ventana de Intellij
 	8.Clic derecho sobre el archivo “purchase.feature” y seleccionar la opción Run: “Features: purchase”
