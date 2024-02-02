@@ -1,5 +1,3 @@
-Conclusiones
-
 Realizado por:
 Luis Miguel Arcia Moreno
 
@@ -35,17 +33,16 @@ Feature:  Verify the operation of the pet store's services
       Then verify with the search method that the user is deleted
 
 
-Hallazgos
+HALLAZGOS
 
 Error 01
-Título: No valida la existencia del usuario el método login
-Descripción:
-El método de login no realiza ninguna validación de username ni de password por lo que cualquier valor en estos atributos dentro del método arroja una respuesta 200
+Título: El método login no valida la existencia del usuario
+Descripción: El método de login no realiza ninguna validación de username ni de password por lo que cualquier valor en estos atributos dentro del método arroja una respuesta 200 (Exitosa)
 
 Error 02
 Título: Error en la documentación de Swagger UI
-Descripción:
-Dentro de la documentación se hace explicito que es necesario hacer login antes de poder ejecutar los métodos Update User y Create User, sin embargo, el método Login no arroja ninguna credencial y los métodos anteriormente mencionados no requieren más que parámetros internos
+Descripción: Dentro de la documentación se hace explícito que es necesario hacer login antes de poder ejecutar los métodos Update User y Create User, sin embargo, el método Login no arroja ninguna credencial y los métodos anteriormente mencionados no requieren más que parámetros internos
 
-Conclusiones:
+CONCLUSIONES:
+
 La validación de los métodos Rest de un servicio pueden escribirse como sentencias de fácil lectura que permiten reportes ligeros y fácil comprensión para el personal no técnico, sin embargo es necesario un desglose dentro de cada paso para evaluar el estado de cada acción dentro del proceso de ejecución, de igual manera la forma ideal de estas pruebas es validar los resultados frente a una BBDD por lo que se requiere permisos y cadenas de conexión a estas dentro del proyecto.
